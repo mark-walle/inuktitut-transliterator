@@ -1,0 +1,33 @@
+<!--
+	Roman Orthography to Inuktitut Syllabics Transliteration Interface
+	Mark Walle
+!-->
+
+<HTML>
+
+<HEAD>
+
+	<TITLE>Roman to Inuktitut</TITLE>
+	
+	<script type="text/javascript" src="romancall.js"></script>
+	<script type="text/javascript" src="keyfilters.js"></script>
+	<link rel="stylesheet" type="text/css" href="reset.css" />
+	<link rel="stylesheet" type="text/css" href="interface.css" />
+	<style type="text/css">body{background-image:url('background.svg');}</style>
+
+</HEAD>
+
+<BODY>
+
+<form>
+<input type="text" id="roman" autocomplete="off" onkeyup="return startTransliteration()" onkeypress="return filterRoman(event)" value="" />
+</form>
+
+<p class="inuk" id="inuktitut"></p>
+
+<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+<p><a href="https://github.com/maakusii/inuktitut-transliterator">On GitHub</a></p>
+
+</BODY>
+
+</HTML>

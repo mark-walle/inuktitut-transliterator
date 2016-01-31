@@ -1,0 +1,42 @@
+body{
+background-repeat: no-repeat;
+font-family: "Helvetica Neue", Helvetica;
+}
+
+input{
+float:left;
+margin-top:45px;
+margin-left: 250px;
+border-color: black;
+border-style: dashed;
+border-width: 2px;
+font-size: 20px;
+width: 110px;
+padding: 5px;
+}
+input:focus{
+outline: none;
+}
+
+p.inuk{
+clear: both;
+float:left;
+margin-top: 155px;
+margin-left:120px;
+border-style: dashed;
+border-width: 2px;
+font-size: 20px;
+min-width: 110px;
+text-align: right;
+padding: 8px;
+height: 15px;
+}
+
+a{
+color: grey;
+margin-left: 5px;
+}
+
+ul{
+text-align: left;
+}
