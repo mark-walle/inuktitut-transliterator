@@ -30,7 +30,7 @@
 	else {
 		$i=0;
 		while($i < strlen($roman)){
-			$j = min($i+4, strlen($roman));
+			$j = min($i+5, strlen($roman));
 			while ($j>$i && $dict[substr($roman,$i,$j-$i)] == null){
 				$j--;
 			}
