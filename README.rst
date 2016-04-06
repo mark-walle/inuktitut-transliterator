@@ -7,8 +7,6 @@ Transliterates Roman othographic Inuktitut into the Unified Canadian Aboriginal 
 Project Website: http://transliterator.maakusii.com/
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
--  Seeking help with UI design and bug testing
-
 Background
 ----------
 
@@ -19,9 +17,9 @@ evolved into a very rudamentary website for use by friends.
 
 In January 2016 some bugs were brought to my atteniton and I decided to
 release the code on Github to make it available for people interested in
-using it offline or helping to improve it. Although this code is
-straightfoward and short, in the spirit of Inuit Qaujimajatuqangit, I
-have licensed it under GPLv3. Please share and share-alike.
+using it offline or helping to improve it. In the spirit of Inuit
+Qaujimajatuqangit (or my best understanding of the spirit), this project
+is open source (using the MIT License right now).
 
 Rules to Generating Syllabics
 -----------------------------
@@ -178,9 +176,24 @@ Table of Syllabics
 | lh           | ᖦ           | 15A6          |
 +--------------+-------------+---------------+
 
++--------------+-------------+
+| Digraphic "qq" Exceptions  |
++--------------+-------------+
+| Othography   | Syllabics   |
++==============+=============+
+| qqi          | ᖅᑭ          |
++--------------+-------------+
+| qqu          | ᖅᑯ          |
++--------------+-------------+
+| qqa          | ᖅᑲ          |
++--------------+-------------+
+| qqii         | ᖅᑮ          |
++--------------+-------------+
+| qquu         | ᖅᑰ          |
++--------------+-------------+
+| qqaa         | ᖅᖄ          |
++--------------+-------------+
 
 --------------
-
-*I assume no liability for the use or misuse of this software.*
 
 **Mark Walle, 2016**
