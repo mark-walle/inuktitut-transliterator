@@ -10,7 +10,7 @@ Project Website: http://transliterator.maakusii.com/
 Background
 ----------
 
-This project began in 2011 out of my personal interest to better
+This project began out of my personal interest to better
 understand Inuktitut, and out of frustration that there were few really
 simple ways transliterate on the fly. It started as a shell script, and
 evolved into a very rudamentary website for use by friends.
