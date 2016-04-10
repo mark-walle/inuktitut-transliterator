@@ -1,33 +1,33 @@
-<!--
-	Roman Orthography to Inuktitut Syllabics Transliteration Interface
-	Mark Walle
-!-->
+<!DOCTYPE html>
+<html ng-app="language">
+<head>
+<meta charset="utf-8">
+<link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet" />
+<link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' />
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.4/angular.min.js"></script>
+<script src="language.js"></script>
 
-<HTML>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-<HEAD>
-
-	<TITLE>Roman to Inuktitut</TITLE>
-	
-	<script type="text/javascript" src="romancall.js"></script>
-	<script type="text/javascript" src="keyfilters.js"></script>
-	<link rel="stylesheet" type="text/css" href="reset.css" />
-	<link rel="stylesheet" type="text/css" href="interface.css" />
-	<style type="text/css">body{background-image:url('background.svg');}</style>
-
-</HEAD>
-
-<BODY>
-
-<form>
-<input type="text" id="roman" autocomplete="off" onkeyup="return startTransliteration()" onkeypress="return filterRoman(event)" value="" />
-</form>
-
-<p class="inuk" id="inuktitut"></p>
-
-<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-<p><a href="https://github.com/maakusii/inuktitut-transliterator">On GitHub</a></p>
-
-</BODY>
-
-</HTML>
+</head>
+  <body ng-controller="LanguageController">
+    <div class="container">
+      <h1>Transliterator</h1>
+      <div ng-controller='LanguageController'>
+		<label for="usr">Roman Orthography:</label>
+		<div class="form-group">
+		<textarea type='text' ng-model='roman' class="form-control inputValue" rows="4" whitelist></textarea>
+		</div>
+		<label for="usr">Inuktitut Syllabics:</label>
+		<p style="white-space: pre-wrap;" class="container-fluid bg-success">{{roman | transliterate}}</p>
+      </div>
+      <label for="usr">Notes:</label>
+      <div class="well well-sm">
+      	<ul class="nav nav-pills">
+		  <li role="presentation"><a href="https://github.com/maakusii/inuktitut-transliterator"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> Github</a></li>
+		</ul>
+		<small>Mark Walle, 2016, <a href="https://opensource.org/licenses/MIT">open source under the MIT license</a></small>
+      </div>
+    </div>
+  </body>
+</html>
