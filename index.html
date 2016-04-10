@@ -14,16 +14,27 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-76229555-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
 </head>
   <body ng-controller="LanguageController">
     <div class="container">
       <h1>Transliterator</h1>
       <div ng-controller='LanguageController'>
-		<label for="usr">Roman Orthography:</label>
+		<label for="usr">ᖃᓕᐅᔮᖅᐸᐃᑦ | Roman Orthography:</label>
 		<div class="form-group">
 		<textarea type='text' ng-model='roman' class="form-control inputValue" rows="4" whitelist></textarea>
 		</div>
-		<label for="usr">Inuktitut Syllabics:</label>
+		<label for="usr">ᖃᓂᐅᔮᖅᐸᐃᑦ | Inuktitut Syllabics:</label>
 		<p style="white-space: pre-wrap;" class="container-fluid bg-success">{{roman | transliterate}}</p>
       </div>
       <label for="usr">Notes:</label>
@@ -31,8 +42,9 @@
       	<ul class="nav nav-pills">
 		  <li role="presentation"><a href="https://github.com/maakusii/inuktitut-transliterator"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> Github</a></li>
 		</ul>
-		<small>Mark Walle, 2016, <a href="https://opensource.org/licenses/MIT">open source under the MIT license</a></small>
+		<small>Mark Walle, 2016. <a href="https://opensource.org/licenses/MIT">MIT Open Source License</a></small>
       </div>
     </div>
+
   </body>
 </html>
