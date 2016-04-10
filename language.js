@@ -1,3 +1,8 @@
+/*
+ * Inuktitut Transliterator by Mark Walle, 2016
+ * Licensed under the MIT License: https://opensource.org/licenses/MIT
+ *
+ */
 transliterator = angular.module('language', []);
 
 transliterator.controller('LanguageController', function($scope) {

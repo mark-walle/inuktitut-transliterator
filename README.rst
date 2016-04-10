@@ -7,6 +7,19 @@ Transliterates Roman othographic Inuktitut into the Unified Canadian Aboriginal 
 Project Website: http://transliterator.maakusii.com/
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Significant Update!
+-------------------
+
+On April 9 I rebuilt this project, and here's what changed:
+- Project has been rewritten using AngularJS, so now processing is all client-side.
+- input supports all sorts of characters that the previous version didn't,
+  including carriage returns and spaces, so you can basically just paste paragraphs of
+  Roman Orthograpic text into it!
+- Support for alternative options for ł as lh, &l, and ll (western dialects).
+- Support for the nng syllabics (which had somehow been missed in the previous version).
+- Support for the H stop character.
+- Now using Bootstrap, so it looks much nicer.
+
 Background
 ----------
 
@@ -36,17 +49,16 @@ Rules to Generating Syllabics
 
 3. Fourteen consonants can stand alone as superscript characters:
 
--  p, t, k, m, n, r, s, l, j, g, q, v, lh, and ng;
--  ᑉ, ᑦ, ᒃ, ᒻ, ᓐ, ᕐ, ᔅ, ᓪ, ᔾ, ᒡ, ᖅ, ᕝ, ᖦ, and ᖕ.
--  Consonants in their superscript cannot immediately precede a vowel in
-   the same word.
+-  H, p, t, k, m, n, r, s, l, j, g, q, v, ł(/lh/&l/ll), and ng;
+-  H, ᑉ, ᑦ, ᒃ, ᒻ, ᓐ, ᕐ, ᔅ, ᓪ, ᔾ, ᒡ, ᖅ, ᕝ, ᖦ, and ᖕ.
+-  Superscript consonants follow vowels, or otherwise they combine
+    with the vowel to produce a new syllabic (see 4).
 
 4. A consonant immediately preceeding a vowel in a word produces a new
    symbol:
 
 -  84 possibilites exist; 42 short vowel, and 42 long vowel;
--  see the complete table at the end of this readme file for the full
-   list.
+-  The complete table of syllabics appears below.
 
 Objectives
 ----------
