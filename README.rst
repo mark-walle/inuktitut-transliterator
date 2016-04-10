@@ -11,10 +11,9 @@ Significant Update!
 -------------------
 
 On April 9 I rebuilt this project, and here's what changed:
+
 - Project has been rewritten using AngularJS, so now processing is all client-side.
-- input supports all sorts of characters that the previous version didn't,
-  including carriage returns and spaces, so you can basically just paste paragraphs of
-  Roman Orthograpic text into it!
+- input supports all sorts of characters that the previous version didn't, including carriage returns and spaces, so you can basically just paste paragraphs of Roman Orthograpic text into it!
 - Support for alternative options for ł as lh, &l, and ll (western dialects).
 - Support for the nng syllabics (which had somehow been missed in the previous version).
 - Support for the H stop character.
