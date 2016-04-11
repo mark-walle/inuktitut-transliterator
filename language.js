@@ -3,7 +3,9 @@
  * Licensed under the MIT License: https://opensource.org/licenses/MIT
  *
  */
-transliterator = angular.module('language', []);
+
+
+transliterator = angular.module('language', ['720kb.socialshare']);
 
 transliterator.controller('LanguageController', function($scope) {
   $scope.roman = "Inuktitut!";
@@ -33,7 +35,7 @@ transliterator.directive('whitelist', [function () {
 }]);
 
 transliterator.filter('transliterate', function() {
-
+console.log("transliterate");
   return function(textarea) {
     
     var orthographics = textarea.toLowerCase() || '';

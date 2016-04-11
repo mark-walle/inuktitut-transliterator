@@ -7,10 +7,18 @@
 <html ng-app="language">
 <head>
 <meta charset="utf-8">
+
 <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet" />
-<link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
 <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.4/angular.min.js"></script>
+
+
+
 <script src="language.js"></script>
+
+<link rel='stylesheet' href="bower_components/angular-socialshare/angular-socialshare.min.css">
+<script src="bower_components/angular-socialshare/angular-socialshare.min.js"></script>
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -26,25 +34,46 @@
 </script>
 
 </head>
-  <body ng-controller="LanguageController">
+  <body ng-controller="LanguageController" style="font-family: proxima-nova, "Helvetica Neue", Helvetica, Arial, sans-serif;">
     <div class="container">
-      <h1>Transliterator</h1>
+
+      <h1>Inuktitut Transliterator</h1>
+
       <div ng-controller='LanguageController'>
-		<label for="usr">ᖃᓕᐅᔮᖅᐸᐃᑦ | Roman Orthography:</label>
+		<label for="usr">ᖃᓕᐅᔮᖅᐸᐃᑦ | Orthography:</label>
 		<div class="form-group">
 		<textarea type='text' ng-model='roman' class="form-control inputValue" rows="4" whitelist></textarea>
-		</div>
-		<label for="usr">ᖃᓂᐅᔮᖅᐸᐃᑦ | Inuktitut Syllabics:</label>
+	   </div>
+
+		<label for="usr">ᖃᓂᐅᔮᖅᐸᐃᑦ | Syllabics:</label>
 		<p style="white-space: pre-wrap;" class="container-fluid bg-success">{{roman | transliterate}}</p>
-      </div>
-      <label for="usr">Notes:</label>
-      <div class="well well-sm">
-      	<ul class="nav nav-pills">
-		  <li role="presentation"><a href="https://github.com/maakusii/inuktitut-transliterator"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> Github</a></li>
+
+		<ul class="nav nav-pills">
+		  <li role="presentation">
+		  	<a href="#"
+			socialshare
+			socialshare-provider="twitter"
+			socialshare-text="{{roman | transliterate}}"
+			socialshare-hashtags="inuktitut, nunavut"
+			socialshare-url="http://transliterator.maakusii.com">
+			<i class="fa fa-twitter"></i> Tweet</a>
+		  </li>
 		</ul>
-		<small>Mark Walle, 2016. <a href="https://opensource.org/licenses/MIT">MIT Open Source License</a></small>
+      	<p></p>
+      </div>
+      <p></p>
+      <label for="usr">Notes:</label>
+      <div class="text-muted well well-sm">
+      	<small>
+      	<ul class="nav nav-pills">
+		  <li role="presentation"><a class="text-muted" href="https://github.com/maakusii/inuktitut-transliterator"><i class="fa fa-github"></i></span> Github</a></li>
+		</ul>
+		Mark Walle, 2016. <a class="text-muted" href="https://opensource.org/licenses/MIT">MIT Open Source License</a>
+		</small>
       </div>
     </div>
+
+    <script src="bower_components/angular-socialshare/src/js/angular-socialshare.js"></script>
 
   </body>
 </html>
