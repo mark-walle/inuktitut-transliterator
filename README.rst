@@ -169,6 +169,8 @@ Note in the above table that the ł character may be written as lh, ll, or &l, t
 +--------------+-------------+
 | Othography   | Syllabics   |
 +==============+=============+
+| p            | ᑉ           |
++--------------+-------------+
 | t            | ᑦ           |
 +--------------+-------------+
 | k            | ᒃ           |
