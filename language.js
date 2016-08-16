@@ -45,7 +45,7 @@ console.log("transliterate");
     i:"ᐃ",pi:"ᐱ",ti:"ᑎ",ki:"ᑭ",gi:"ᒋ",mi:"ᒥ",ni:"ᓂ",li:"ᓕ",si:"ᓯ ",ji:"ᔨ ",ri:"ᕆ",vi:"ᕕ",qi:"ᕿ",ngi:"ᖏ",nngi:"ᙱ",lhi:"ᖠ",łi:"ᖠ",'&i':"ᖠ",ii:"ᐄ",pii:"ᐲ",tii:"ᑏ",kii:"ᑮ",gii:"ᒌ",mii:"ᒦ",nii:"ᓃ",lii:"ᓖ",sii:"ᓰ ",jii:"ᔩ ",rii:"ᕇ",vii:"ᕖ",qii:"ᖀ",ngii:"ᖐ",nngii:"ᙲ",lhii:"ᖡ",łii:"ᖡ",'&ii':"ᖡ",llii:"ᖡ",
     u:"ᐅ",pu:"ᐳ",tu:"ᑐ",ku:"ᑯ",gu:"ᒍ",mu:"ᒧ",nu:"ᓄ",lu:"ᓗ",su:"ᓱ",ju:"ᔪ",ru:"ᕈ",vu:"ᕗ",qu:"ᖁ",ngu:"ᖑ",nngu:"ᙳ",lhu:"ᖢ",łu:"ᖢ",'&u':"ᖢ",uu:"ᐆ",puu:"ᐴ",tuu:"ᑑ",kuu:"ᑰ",guu:"ᒎ",muu:"ᒨ",nuu:"ᓅ",luu:"ᓘ",suu:"ᓲ",juu:"ᔫ",ruu:"ᕉ",vuu:"ᕘ",quu:"ᖂ",nguu:"ᖒ",nnguu:"ᙴ",lhuu:"ᖣ",łuu:"ᖣ",'&uu':"ᖣ",lluu:"ᖣ",
     a:"ᐊ",pa:"ᐸ",ta:"ᑕ",ka:"ᑲ",ga:"ᒐ",ma:"ᒪ",na:"ᓇ",la:"ᓚ",sa:"ᓴ",ja:"ᔭ",ra:"ᕋ",va:"ᕙ",qa:"ᖃ",nga:"ᖓ",nnga:"ᙵ",lha:"ᖤ",ła:"ᖤ",'&a':"ᖤ",aa:"ᐋ",paa:"ᐹ",taa:"ᑖ",kaa:"ᑳ",gaa:"ᒑ",maa:"ᒫ",naa:"ᓈ",laa:"ᓛ",saa:"ᓵ",jaa:"ᔮ",raa:"ᕌ",vaa:"ᕚ",qaa:"ᖄ",ngaa:"ᖔ",nngaa:"ᙶ",lhaa:"ᖥ",łaa:"ᖥ",'&aa':"ᖥ",llaa:"ᖥ",
-    p:"ᑉ",t:"ᑦ",k:"ᒃ",g:"ᒡ",m:"ᒻ",n:"ᓐ",l:"ᓪ",s:"ᔅ",j:"ᔾ",r:"ᕐ",v:"ᕝ",q:"ᖅ",ng:"ᖕ",nng:"ᖖ",lh:"ᖦ",ł:"ᖦ",ll:"ᖦ",
+    p:"ᑉ",t:"ᑦ",k:"ᒃ",g:"ᒡ",m:"ᒻ",n:"ᓐ",l:"ᓪ",s:"ᔅ",j:"ᔾ",r:"ᕐ",v:"ᕝ",q:"ᖅ",ng:"ᖕ",nng:"ᖖ",lh:"ᖦ",ł:"ᖦ",
     qqi:"ᖅᑭ",qqu:"ᖅᑯ",qqa:"ᖅᑲ",qqii:"ᖅᑮ",qquu:"ᖅᑰ",qqaa:"ᖅᑳ",
     h:"H"
     };
